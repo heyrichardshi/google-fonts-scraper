@@ -6,13 +6,13 @@ if test ! $(which git); then
   exit 0
 fi
 
-#Download the repo and cd to fonts folder (Thanks to w0ng!)
-git clone https://github.com/w0ng/googlefontdirectory w0ng
-cd w0ng/fonts
+#Download the repo and cd to fonts folder
+git clone https://github.com/google/fonts gfonts
+cd gfonts
 
-#Magical find command to cp all fonts to /Library/Fonts
-find . -name "*.ttf" -exec cp {} /Library/Fonts/ \;
+#Magical find command to cp all fonts to ~/Desktop/fonts
+find . -name "*.ttf" -exec cp {} ~/Desktop/fonts \;
 
 #All done, let's clean up a bit
 cd ../..
-rm -rf w0ng
+rm -rf gfonts
