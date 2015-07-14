@@ -1,6 +1,8 @@
-#Install All Google Fonts
+#Google Fonts Scraper
 
-This script simply installs all the google webfonts.
+*For Windows*
+
+This script scrapes all google fonts from google/fonts and copies into a folder.
 
 Just download and run
 
